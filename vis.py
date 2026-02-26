@@ -150,7 +150,7 @@ fig_region = px.bar(
     y="purchaseamount",
     title="Revenue by Region"
 )
-fig_region.update_layout(plot_bgcolor="white", paper_bgcolor="white")
+fig_region.update_layout()
 
 # Revenue by Product Category
 category_df = (
@@ -164,7 +164,7 @@ fig_category = px.bar(
     y="purchaseamount",
     title="Revenue by Product Category"
 )
-fig_category.update_layout(plot_bgcolor="white", paper_bgcolor="white")
+fig_category.update_layout)
 
 col_left.plotly_chart(fig_region, use_container_width=True)
 col_right.plotly_chart(fig_category, use_container_width=True)
@@ -184,7 +184,7 @@ fig_channel = px.pie(
     title="Revenue Distribution by Sales Channel",
     hole=0.4
 )
-fig_channel.update_layout(plot_bgcolor="white", paper_bgcolor="white")
+fig_channel.update_layout()
 
 # Satisfaction vs Revenue
 fig_scatter = px.scatter(
@@ -194,7 +194,7 @@ fig_scatter = px.scatter(
     color="label",
     title="Revenue vs Customer Satisfaction"
 )
-fig_scatter.update_layout(plot_bgcolor="white", paper_bgcolor="white")
+fig_scatter.update_layout()
 
 col_left2.plotly_chart(fig_channel, use_container_width=True)
 col_right2.plotly_chart(fig_scatter, use_container_width=True)
