@@ -164,7 +164,7 @@ fig_category = px.bar(
     y="purchaseamount",
     title="Revenue by Product Category"
 )
-fig_category.update_layout)
+fig_category.update_layout()
 
 col_left.plotly_chart(fig_region, use_container_width=True)
 col_right.plotly_chart(fig_category, use_container_width=True)
