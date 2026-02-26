@@ -132,7 +132,7 @@ fig_segment = px.bar(
     color="label",
     title="Revenue by Customer Segment"
 )
-fig_segment.update_layout(plot_bgcolor="white", paper_bgcolor="white")
+fig_segment.update_layout()
 st.plotly_chart(fig_segment, use_container_width=True)
 
 col_left, col_right = st.columns(2)
