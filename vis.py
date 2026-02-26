@@ -1,4 +1,3 @@
-```python
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -237,4 +236,3 @@ st.dataframe(top_customers.reset_index(drop=True))
 # -----------------------
 st.subheader("Filtered Dataset")
 st.dataframe(filtered_df.reset_index(drop=True))
-```
